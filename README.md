@@ -1,16 +1,12 @@
-# Project №14 "Yandex_praktikum"
-**v 0.0.2**
-Configuring the server in a Node.js express.js & MongoDB and and implement authentication and authorization with cookies
+# Project №15 "Yandex_praktikum"
+**v 0.0.1**
 
 **Modules:**
 ```sh
-"body-parser", "celebrate", "express", "joi-objectid", 
-"mongoose", "validator", "eslint", "eslint-config-airbnb-base", 
-"eslint-plugin-import", "nodemon", "jsonwebtoken", "mongoose-unique-validator", "cookie-parser"
+
 ```
 ### Getting started
 
-The sprint_14 was created on the [Node.js](https://nodejs.org/) v12+.
 
 **Start server:**
 ```sh
