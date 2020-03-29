@@ -1,7 +1,7 @@
 {
-  "name": "sprint_14",
+  "name": "sprint_15",
   "version": "0.0.2",
-  "description": "Training project - sprint_14 Configuring the server and implement authentication and authorization",
+  "description": "Training project - sprint_15",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i-potashov/sprint_14.git"
+    "url": "git+https://github.com/i-potashov/sprint_15.git"
   },
   "author": "I.Potashov",
   "license": "MIT",
