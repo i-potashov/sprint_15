@@ -9,6 +9,7 @@ const { errorHandler } = require('./middlewares/errorHandler');
 const { login, createUser, clearToken } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const { loginRequestCheck, userRequestCheck } = require('./modules/validations');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const app = express();
 
@@ -22,12 +23,14 @@ mongoose.connect(DB, {
   useFindAndModify: false,
 });
 
+app.use(requestLogger); // подключаем логгер запросов
 app.post('/signin', loginRequestCheck, login);
 app.post('/signup', userRequestCheck, createUser);
 app.post('/clearcookie', clearToken); // Добавил возможность затирания cookie для удобства тестирования
 app.use(cookieParser());
 app.use(auth);
 app.use(routes);
+app.use(errorLogger); // подключаем логгер ошибок
 // Обработчик ошибок celebrate
 app.use(errors());
 
