@@ -1,10 +1,14 @@
 # Project №15 "Yandex_praktikum"
 **v 0.0.1**
 
-**Modules:**
-```sh
+The project was implemented in the Yandex cloud service and available at https://sprint15yp.tk
 
-```
+**Implemented:**
+
+A centralized error handler.
+Request validation  based on the Joi and Celebrate.
+Logging requests and errors based on Winston.
+
 ### Getting started
 
 
