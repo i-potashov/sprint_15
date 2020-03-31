@@ -1,5 +1,5 @@
-# Project №15 "Yandex_praktikum"
-**v 0.0.1**
+# Project №15 "Yandex_praktikum" 
+[![Build Status](https://travis-ci.com/i-potashov/sprint_15.svg?branch=develop)](https://travis-ci.com/i-potashov/sprint_15)
 
 The project was implemented in the Yandex cloud service and available at https://sprint15yp.tk
 
