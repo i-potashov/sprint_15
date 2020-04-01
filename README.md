@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Overview
-Project on Node.js Express.js and Mongodb for creating a backend for a web application, the project was implemented in the Yandex cloud service and is available at [Sprint15YP.tk](https://sprint15yp.tk)
+Project on Node.js Express.js and Mongodb for creating a backend for a web application, the project was implemented in the Yandex cloud service and is available at [Sprint15YP.tk](https://sprint15yp.tk) or [84.201.157.205](84.201.157.205)
 
 **Implemented:**
 * A centralized error handler.
@@ -63,7 +63,6 @@ $ npm run dev
 $ npm run eslint
 $ npm run eslintfix
 ```
-## Docker
 
 **After starting the server, you can try these queries:**
 
