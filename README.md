@@ -1,5 +1,8 @@
-# Project №15 "Yandex_praktikum"
-**v 0.0.1**
+# Project №15 "Yandex_praktikum" 
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/I-potashov/sprint_15/develop?color=green)
+![GitHub](https://img.shields.io/github/license/I-potashov/sprint_15)
+
+## Overview
 
 The project was implemented in the Yandex cloud service and available at https://sprint15yp.tk
 
