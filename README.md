@@ -35,13 +35,17 @@ Using the Postman program, you can run multiple queries:
 ```sh
 POST https://sprint15yp.tk/signup
 ```
-<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_01.png" align="left" height="auto" width="600">
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_01.png" height="auto" width="600">
+</p>
 
 
 ```sh
 POST https://sprint15yp.tk/signin
 ```
-<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_02.png" align="left" height="auto" width="600">
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_02.png" height="auto" width="600">
+</p>
 
 
 ```sh
@@ -56,14 +60,20 @@ GET https://sprint15yp.tk/users/:userId
 ```sh
 POST https://sprint15yp.tk/cards
 ```
-<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_03.png" align="left" height="auto" width="600">
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_03.png" height="auto" width="600">
+</p>
 
 
 ```sh
 GET https://sprint15yp.tk/cards
 ```
-<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_04.png" align="left" height="auto" width="600">
-<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_05.png" align="left" height="auto" width="600">
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_04.png" height="auto" width="600">
+</p>
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_05.png" height="auto" width="600">
+</p>
 
 
 ## Launch locally
