@@ -34,16 +34,37 @@ Using the Postman program, you can run multiple queries:
 
 ```sh
 POST https://sprint15yp.tk/signup
+```
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_01.png" align="left" height="auto" width="600">
+
+
+```sh
 POST https://sprint15yp.tk/signin
+```
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_02.png" align="left" height="auto" width="600">
+
+
+```sh
 POST https://sprint15yp.tk/clearcookie
 ```
+
 After authorization:
 ```sh
 GET https://sprint15yp.tk/users
 GET https://sprint15yp.tk/users/:userId
-GET https://sprint15yp.tk/cards
+```
+```sh
 POST https://sprint15yp.tk/cards
 ```
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_03.png" align="left" height="auto" width="600">
+
+
+```sh
+GET https://sprint15yp.tk/cards
+```
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_04.png" align="left" height="auto" width="600">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_05.png" align="left" height="auto" width="600">
+
 
 ## Launch locally
 
