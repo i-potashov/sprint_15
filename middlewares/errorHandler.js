@@ -4,7 +4,7 @@ const { SERVER_ERROR } = require('../configuration/constants');
 const errorHandler = (err, req, res, next) => {
   const { statusCode = 500, message } = err;
   console.log(err.stack);
-  console.log('Сработал централизованный обработчик ошибок');
+  console.log('The centralized error handler was triggered');
   res.status(statusCode).send({ message: statusCode === 500 ? SERVER_ERROR : message });
 };
 
