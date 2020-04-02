@@ -23,8 +23,6 @@ const cardRequestCheck = celebrate({
     name: Joi.string().required().required().min(2)
       .max(30),
     link: Joi.string().required().uri(),
-    owner: Joi.objectId(),
-    likes: Joi.objectId(),
   }),
 });
 

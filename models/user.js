@@ -39,10 +39,6 @@ const userSchema = new mongoose.Schema({
 userSchema.plugin(uniqueValidator);
 userSchema.path('avatar').validate(validator.isURL, INVALID_LINK);
 userSchema.path('email').validate(validator.isEmail, INVALID_EMAIL);
-// userSchema.pre('findOneAndUpdate', function (next) {
-//   this.options.runValidators = true;
-//   next();
-// });
 
 // eslint-disable-next-line func-names
 userSchema.statics.findUserByCredentials = function (email, password) {
