@@ -1,16 +1,82 @@
-# Project №15 "Yandex_praktikum"
-**v 0.0.1**
+# Project №15 "Yandex_praktikum" 
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/I-potashov/sprint_15/develop?color=green)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-The project was implemented in the Yandex cloud service and available at https://sprint15yp.tk
+## Overview
+Project on Node.js Express.js and Mongodb for creating a backend for a web application, the project was implemented in the Yandex cloud service and is available at [Sprint15YP.tk](https://sprint15yp.tk) or [84.201.157.205](84.201.157.205)
 
 **Implemented:**
+* A centralized error handler.
 
-A centralized error handler.
-Request validation  based on the Joi and Celebrate.
-Logging requests and errors based on Winston.
+Example:
+````swift
+const errorHandler = (err, req, res, next) => {
+  const { statusCode = 500, message } = err;
+  res.status(statusCode).send({ message: statusCode === 500 ? SERVER_ERROR : message });
+};
+````
+* Request validation  based on the [joi](https://www.npmjs.com/package/@hapi/joi) and [celebrate](https://www.npmjs.com/package/celebrate).
 
-### Getting started
+Example:
+````swift
+body: Joi.object().keys({
+    email: Joi.string().required().email(),
+    password: Joi.string().required().min(8),
+  }),
+};
+````
+* Logging requests and errors based on [winston](https://www.npmjs.com/package/winston).
 
+* Code analysis is implemented using [eslint](https://www.npmjs.com/package/eslint).
+
+## Getting started
+Using the Postman program, you can run multiple queries:
+
+```sh
+POST https://sprint15yp.tk/signup
+```
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_01.png" height="auto" width="600">
+</p>
+
+
+```sh
+POST https://sprint15yp.tk/signin
+```
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_02.png" height="auto" width="600">
+</p>
+
+
+```sh
+POST https://sprint15yp.tk/clearcookie
+```
+
+After authorization:
+```sh
+GET https://sprint15yp.tk/users
+GET https://sprint15yp.tk/users/:userId
+```
+```sh
+POST https://sprint15yp.tk/cards
+```
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_03.png" height="auto" width="600">
+</p>
+
+
+```sh
+GET https://sprint15yp.tk/cards
+```
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_04.png" height="auto" width="600">
+</p>
+<p align="center">
+<img src="https://github.com/i-potashov/img_readme/raw/master/sprint15/sp15_05.png" height="auto" width="600">
+</p>
+
+
+## Launch locally
 
 **Start server:**
 ```sh
@@ -28,7 +94,6 @@ $ npm run dev
 $ npm run eslint
 $ npm run eslintfix
 ```
-### Docker
 
 **After starting the server, you can try these queries:**
 
@@ -41,11 +106,11 @@ GET /users/:userId
 GET /cards
 POST /cards
 ```
-### Todos
+## Todos
 
  - Add automated testing
  - Fix custom errors
  
-### License
+## License
 
-MIT
+MIT license. [See LICENSE](./LICENSE) for details.
